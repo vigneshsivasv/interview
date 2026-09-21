@@ -1,5 +1,26 @@
 # React + Vite
 
+## Run with Docker
+
+Build and start the production container with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+Open [http://localhost:8080](http://localhost:8080) in your browser. Stop the container with:
+
+```bash
+docker compose down
+```
+
+To build and run the image without Compose:
+
+```bash
+docker build -t interview-app .
+docker run --rm -p 8080:80 interview-app
+```
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

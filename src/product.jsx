@@ -47,8 +47,8 @@ const Button = styled.button`
 `;
 
 function ProductCard({ product }) {
-  console.log("product", product)
-    return (
+  // console.log("product", product)
+  return (
     <Card>
       <Image src={product.thumbnail} alt={product.title} />
 
@@ -64,7 +64,7 @@ function ProductCard({ product }) {
         <Button>Add to Cart</Button>
       </Content>
     </Card>
-    );
+  );
 }
 
 export default ProductCard;

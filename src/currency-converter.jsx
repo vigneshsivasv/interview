@@ -12,13 +12,13 @@ const CurrenyConverter = () => {
         const fetchApi = async () => {
             const response = await fetch(`https://api.frankfurter.dev/v1/latest?amount=${amount}&from=${from}&to${to}`);
             const data = await response.json();
-            console.log("currency data", data);
+            // console.log("currency data", data);
             setCurrencyData(data);
         }
         fetchApi();
     }, [amount, from, to]);
 
-    console.log("currency data", currencyData);
+    // console.log("currency data", currencyData);
     const currencies = currencyData
         ? [currencyData.base, ...Object.keys(currencyData.rates)]
         : [];
